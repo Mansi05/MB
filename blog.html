@@ -1,0 +1,161 @@
+
+ 
+ 
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link ref="stylesheet" href="blog.css" type="text/css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      color: aliceblue;
+  }
+
+
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+      float: left;
+      width: 75%;
+      
+
+  }
+  
+  /* Right column */
+  .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+  }
+  
+  /* Fake image */
+  /* .fakeimg {
+      color: #aaa;
+      width: 100%;
+      padding: 20px;
+  } */
+  
+  /* Add a card effect for articles */
+  .card {
+       background-color: white;
+       padding: 20px;
+       margin-top: 20px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+      padding: 0px;
+      margin:10px;
+      text-align: center;
+      background:rgb(134, 169, 173);
+      
+      
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+          background-image: url(img/1.jpg)
+      }
+  }
+  </style>
+  </head>
+  <body>
+    
+  
+  <div class="header" style="background-image: url(img/1.jpg);">
+    <h2>FTC Design</h2>
+
+    <div id="menu">
+            
+     <a href="index.html">Home</a>
+               
+</div>
+   </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Best Innovation </h2>
+        <h5>New York, April, 2018</h5>
+        <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+        <img src="img\10.jpg" width="100%; height:30px;">
+        
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="card">
+        <h2>Amazing Infrastructure</h2>
+        <h5>Brazil, March, 2017</h5>
+        <img src="img\4.jpg" width="100%; height:30px;">
+      
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <img src="img\one.jpg" width="50%; height:10;">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+       
+        <img src="img\m.jpg.jpeg" width="100%;"><br>
+        <br>
+        <img src="img\a.jpeg" width="100%;"><br>
+      
+      
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>
+        <div class="fa fa-facebook-official"></div>
+        <div class="fa fa-twitter-square"></div>
+        <div class="fa fa-linkedin-square"></div>
+    </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+ 
+             <p><br>FTC <br>
+          UCG California,<br>
+         Santa Cruz. 1156 High Street.<br>
+          Santa Cruz, CA 95064.</p><br>
+         <i> @ 2018 FTC, ALL Rights Reserved.</i><br><br>
+   
+  </div>
+  
+  
+  </body>
+  </html>
